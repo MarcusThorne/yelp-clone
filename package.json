@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/netlify-lambda serve index.js",
+    "build": "./node_modules/.bin/netlify-lambda build index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "http-errors": "^2.0.0",
+    "morgan": "^1.10.0",
+    "netlify-lambda": "^2.0.16",
+    "nodemon": "^3.0.1",
+    "pg": "^8.11.2",
+    "serverless-http": "^3.2.0"
+  }
+}
