@@ -1,5 +1,7 @@
 import axios from 'axios';
 
+// Proxy
+
 export default axios.create({
-  baseURL: 'http://localhost:4000/reviews/'
+  baseURL: '/reviews/'
 });

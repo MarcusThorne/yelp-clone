@@ -6,7 +6,7 @@ const RestaurantServiceInstance = new RestaurantService();
 
 module.exports = (app) => {
   // Defining the url
-  app.use('/.netlify/functions/restaurants/', restaurantsRouter);
+  app.use('/restaurants', restaurantsRouter);
 
 
   // Get all restaraunts

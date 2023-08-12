@@ -9,7 +9,7 @@ const ReviewService = require('../services/ReviewServiceInstance')
 const ReviewServiceInstance = new ReviewService();
 
 module.exports = (app) => {
-  app.use('/.netlify/functions/reviews', reviewsRouter)
+  app.use('/reviews', reviewsRouter)
 
   // Get reviews for specific restaurant
   reviewsRouter.get('/:restaurantId', async (req, res) => {

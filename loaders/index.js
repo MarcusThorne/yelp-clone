@@ -1,14 +1,11 @@
-const serverlessLoader = require('./Severless')
 const morganLoader = require('./Morgan');
 const expressLoader = require('./Express');
 const routeLoader = require('../routes');
+
 const cors = require('cors')
 
 module.exports = async (app) => {
   app.use(cors());
-
-  // Load severless for deployment
-  await serverlessLoader(app)
 
   // Load the express middleware
   await expressLoader(app);
